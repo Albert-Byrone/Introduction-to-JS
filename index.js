@@ -239,25 +239,17 @@
 //}
 
 
-let convertTemperature = (value, unit) => {
-    let convertedResult;
-
-    if(unit === "C"){
-        convertedResult = (value * 9/5) + 32;
-    }else if(unit === "F"){
-        convertedResult = (value - 32) * 5/9;
-    }
-
-    return convertedResult.toFixed(2);
-};  //Arrow function
-console.log("convertTemperature", convertTemperature(25, "C"));
-
-
-
-
-
-
-
+//let convertTemperature = (value, unit) => {
+//    let convertedResult;
+//
+//    if(unit === "C"){
+//        convertedResult = (value * 9/5) + 32;
+//    }else if(unit === "F"){
+//        convertedResult = (value - 32) * 5/9;
+//    }
+//    return convertedResult.toFixed(2);
+//};  //Arrow function
+//console.log("convertTemperature", convertTemperature(25, "C"));
 
 // Question:
 // You are building a simple registration form for a website.
@@ -275,3 +267,198 @@ console.log("convertTemperature", convertTemperature(25, "C"));
 // isUserEligible(20, "United States"); // should return true
 // isUserEligible(16, "Canada"); // should return false
 // isUserEligible(25, "Germany"); // should return false
+//
+//function isUser(){
+//    var x = 10;
+//    let y = 20;
+//
+//    if(true){
+//        var z = 30;
+//        let u = 40;
+//    }
+//    console.log("X inside the function", x);
+//    console.log("Y inside the function", y);
+//    console.log("Z inside the function", z);
+//    console.log("U inside the function", u);
+//}
+//isUser();
+////Function definition
+//function sum(x, y, z){
+//    return x+y+z;
+//};
+////Arrow function
+//let sum = () => {}
+//
+//
+////Anonymous
+//let sum = function (){}
+//
+////Immediately invoked function
+//(function(){
+//    console.log("Something")
+//})
+//
+//
+//
+//sum()
+//sum(12,79,687)
+//sun(856786,698758,5908677586);
+
+
+
+
+//Arrays
+
+//Primitive
+//    - String
+//    - Number
+//
+//Non-Primitives
+//    - Array
+//    - Object
+
+
+// - What is an array
+//   - A variable Hold different data types
+// - How create an array
+//    - let arrayName = [value1, value2, ...]
+// - How to access items in an array
+// - How to update items in an array
+// - Array methods
+//    - What is a method
+//    - Example of array methods
+//
+
+//let names = ['Albert', 'Byrone', 25, 29.78 , null, false]
+////                0           1     2   3       4      5
+////let newNames = new Array()
+//console.log(names.length) // Returns the number of items in the array 6
+//names.push("Hellen") //Add a new item at the end of the array
+//
+//names.splice(1)
+//names.slice()
+//
+////At the end of the array
+////At the beginning of the array
+//console.log(names)
+
+//Access bracket notation
+//console.log(names[1])
+//console.log(names[2])
+//console.log(names);
+
+
+//function gradeGenerator(marks){
+//    console.log(marks)
+//    switch(marks){
+//        case marks >= 79:
+//            return "A"
+//            break;
+//        case marks > 60 && marks < 79:
+//            return "B-"
+//            break;
+//        default:
+//            return "continue"
+//    }
+//}
+//console.log(gradeGenerator(80))
+
+
+
+//let people = [
+//    {
+//        name: "Hamida",
+//        age: 23
+//    },
+//    {
+//        name: "Albert",
+//        age: 12
+//    },
+//    {
+//        name: "Byrone",
+//        age: 63
+//    }
+//]
+//
+//// map
+//let names = people.map(person => {
+//    return person.name
+//});
+//
+//let name = people.map(function(){
+//
+//})
+//
+//// filter
+//
+//let age = people.filter(person =>{
+//    return person.age >= 20
+//}).map(person =>{
+//    return person.name
+//})
+//console.log("===============",age);
+//
+//
+//const totalAge = people.reduce((total, person) =>{
+//    return total + person.age
+//}, 12)
+
+//let function = arrayName.iteration
+//(object =>{return object.function "condition"})
+
+
+// DOM
+// - What DOM
+//        Document(file .html .xhml ) Object(tags, elements) Model(layout, structure)
+// - Manipulate DOM
+//    - Select Elements
+//    - Change Elements
+//    - Add and Delete Elements - child elements
+
+// Id document.getElementById(id)
+let heading = document.getElementById("head");
+heading.innerHTML = "Something"
+console.log(heading)
+
+//className
+//let selected = document.getElementsByClassName("head"); // array
+//console.log(selected);
+//tags
+//
+//let selectedByTag = document.getElementsByTagName("h1");
+//console.log(selectedByTag);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
